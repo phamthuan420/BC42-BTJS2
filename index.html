@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BT-JS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .khoi_item {
+            border: solid 1px black;
+            border-radius: 20px;
+            padding: 0 20px;
+        }
+
+        h4,
+        h3 {
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2> MÔ HÌNH 3 KHỐI</h2>
+        <h3>BT1: BẢNG TÍNH CÔNG</h3>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="khoi_item">
+                <h4>Đầu Vào</h4>
+                <ol>
+                    <li>Ngày Làm</li>
+                    <li>Lương 1 ngày</li>
+                </ol>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="khoi_item">
+                <h4>Các bước tiến hành</h4>
+                <ol>
+                    <li>Tạo biến luong1Ngay, soNgayLam</li>
+                    <li>Gắn gia trị cho luong1Ngay, soNgayLam</li>
+                    <li>Tạo biến lương</li>
+                    <li>Sử dụng công thức lương = luong1Ngay * soNgayLam</li>
+                    <li>In kết quả</li>
+                </ol>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="khoi_item">
+                <h4>Đầu Ra</h4>
+                <ol>
+                    <li>TIỀN LƯƠNG</li>
+                </ol>
+            </div>
+        </div>
+        <div class="d-flex mt-4">
+        <div class="form-group mr-2">
+            <input class="form-control" id="ngayluong" type="number" placeholder="Nhập lương 1 ngày">
+        </div>
+        <div class="form-group mr-2">
+            <input class="form-control" id="ngaycong" type="number" placeholder="Số ngày làm">
+        </div>
+    </div>
+        <button class="btn btn-danger" id="btnluong">Tổng lương</button>
+        <div class="mt-4">
+            <p id="luongtn" style="display: none; font-weight: 500;">Tổng lương thực nhận</p>
+            <p id="total"></p>
+        </div>
+    </div>
+    <div class="container">
+        <h3>BT2: Tính giá trị trung bình</h3>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="khoi_item">
+                <h4>Đầu Vào</h4>
+                <ol>
+                    <li>Số thực 1</li>
+                    <li>Số thực 2</li>
+                    <li>Số thực 3</li>
+                    <li>Số thực 4</li>
+                    <li>Số thực 5</li>
+                </ol>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="khoi_item">
+                <h4>Các bước tiến hành</h4>
+                <ol>
+                    <li>Tạo biến sothuc1, sothuc2, sothuc3, sothuc4, sothuc5</li>
+                    <li>Gắn gia trị cho sothuc1, sothuc2, sothuc3, sothuc4, sothuc5</li>
+                    <li>Tạo biến tbTong</li>
+                    <li>Sử dụng công thức lương = luong1Ngay * soNgayLam</li>
+                    <li>In kết quả</li>
+                </ol>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="khoi_item">
+                <h4>Đầu Ra</h4>
+                <ol>
+                    <li>TỔNG TRUNG BÌNH 5 SỐ THỰC</li>
+                </ol>
+            </div>
+        </div>
+        <div class="d-flex mt-4">
+            <div class="form-group mr-2">
+                <input class="form-control" id="num1" type="number" placeholder="Number 1">
+            </div>
+            <div class="form-group mr-2">
+                <input class="form-control" id="num2" type="number" placeholder="Number 2">
+            </div>
+            <div class="form-group mr-2">
+                <input class="form-control" id="num3" type="number" placeholder="Number 3">
+            </div>
+            <div class="form-group mr-2">
+                <input class="form-control" id="num4" type="number" placeholder="Number 4">
+            </div>
+            <div class="form-group mr-2">
+                <input class="form-control" id="num5" type="number" placeholder="Number 5">
+            </div>
+        </div>
+        <button class="btn btn-danger" id="btntinh">Tính Tổng</button>
+        <div class="mt-4">
+            <p id="tongsothuc" style="display: none; font-weight: 500;">Tổng Năm số thực</p>
+            <p id="ketqua1"></p>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+
+        <h3>BT3: QUY ĐỔI TIỀN</h3>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="khoi_item">
+                <h4>Đầu Vào</h4>
+                <ol>
+                    <li>giá trị cần quy đổi USD</li>
+                </ol>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="khoi_item">
+                <h4>Các bước tiến hành</h4>
+                <ol>
+                    <li>Tạo biến VND=23500, USD</li>
+                    <li>Gắn gia trị cho USD</li>
+                    <li>Tạo biến quyDoiVND</li>
+                    <li>Sử dụng công thức quyDoiVND = USD * VND</li>
+                    <li>In kết quả</li>
+                </ol>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="khoi_item">
+                <h4>Đầu Ra</h4>
+                <ol>
+                    <li>GIÁ TRỊ SAU QUY ĐỔI USD SANG VND</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="form-group mt-4">
+            <input class="form-control" id="usd" type="number" placeholder="Nhập số tiền USD">
+        </div>
+        <button class="btn btn-danger" id="btndoi">Quy Đổi Tiền</button>
+        <div class="mt-4">
+            <p id="giatriquydoi" style="display: none; font-weight: 500;">Giá trị quy đổi sang VND</p>
+            <p id="ketqua2"></p>
+        </div>
+    </div>
+    <div class="container">
+        <h3>BT4: TÍNH DIỆN TÍCH , CHU VI HÌNH CHỮ NHẬT</h3>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="khoi_item">
+                <h4>Đầu Vào</h4>
+                <ol>
+                    <li>CHIỀU DÀI</li>
+                    <li>CHIỀU RỘNG</li>
+
+                </ol>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="khoi_item">
+                <h4>Các bước tiến hành</h4>
+                <ol>
+                    <li>Tạo biến chiều dài (longs), chiều rộng (width)</li>
+                    <li>Gắn gia trị cho chiều dài (longs), chiều rộng (width)</li>
+                    <li>Tạo biến chuVi và dienTich Hình CN</li>
+                    <li>Sử dụng công thức tính chu vi = (dài + rộng)*2</li>
+                    <li>Sử dụng công thức tính diện tích = dài * rộng</li>
+                    <li>In kết quả</li>
+                </ol>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="khoi_item">
+                <h4>Đầu Ra</h4>
+                <ol>
+                    <li>Kết quả chu vi HCN</li>
+                    <li>Kết quả diện tích HCM</li>
+                </ol>
+            </div>
+        </div>
+        <div class="d-flex mt-4">
+        <div class="form-group mr-2">
+            <input class="form-control" id="dai" type="number" placeholder="Chiều dài hình chữ nhật">
+        </div>
+        <div class="form-group mr-2">
+            <input class="form-control" id="rong" type="number" placeholder="Chiều rộng hình chữ nhật">
+        </div>
+    </div>
+        <button class="btn btn-danger" id="tinh">Tính</button>
+        <div class="mt-4">
+            <p id="chuvi" style="display: none; font-weight: 500;"> &#9759;	</p>
+            <p id="ketqua3"></p>
+        </div>
+    </div>
+    <div class="container">
+        <h3>BT5: TÍNH TỔNG 2 KÝ SỐ</h3>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="khoi_item">
+                <h4>Đầu Vào</h4>
+                <ol>
+                    <li>Số gồm 2 chữ số</li>
+                </ol>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="khoi_item">
+                <h4>Các bước tiến hành</h4>
+                <ol>
+                    <li>Tạo biến number số gồm 2 chữ số</li>
+                    <li>Tạo biến Total</li>
+                    <li>Tách các ký số hàng chục và hàng đơn vị bằng %10 và Math.floor(number/10) (Làm tròn)</li>
+                    <li>Sử dụng công thức tổng 2 số hàng chục và hàng đơn vị</li>
+                    <li>In kết quả</li>
+                </ol>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="khoi_item">
+                <h4>Đầu Ra</h4>
+                <ol>
+                    <li>TỔNG CỦA 2 KÝ SỐ</li>
+                </ol>
+            </div>
+        </div>
+        <div class="form-group mt-4">
+            <input class="form-control" id="nhapso" type="number" placeholder="Nhập số có 2 chữ số">
+        </div>
+        <button class="btn btn-danger" id="tinhtong">Tính</button>
+        <div class="mt-4">
+            <p id="tongchuso" style="display: none; font-weight: 500;">Tổng 2 ký số</p>
+            <p id="ketqua4"></p>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
